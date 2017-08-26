@@ -1,7 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class InteractionListItem extends React.PureComponent {
+  static propTypes = {
+    interaction: PropTypes.shape({}),
+  };
+
   render() {
-    return (<li>{this.props.interaction.book.title}</li>);
+    const { interaction } = this.props;
+    const { book, person } = interaction;
+    return (
+      <tr>
+        <td>{book.title}</td>
+        <td>{person.name}</td>
+        <td>{interaction.comment}</td>
+      </tr>
+    );
   }
 }

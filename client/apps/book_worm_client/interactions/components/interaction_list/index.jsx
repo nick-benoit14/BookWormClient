@@ -25,11 +25,16 @@ export class InteractionList extends React.PureComponent {
   render() {
     const { interactions } = this.props;
     return (
-      <ul>
+      <table>
+        <tr>
+          <th>Book</th>
+          <th>Person</th>
+          <th>Comment</th>
+        </tr>
         {
           _.map(interactions, i => <InteractionListItem interaction={i} />)
         }
-      </ul>
+      </table>
     );
   }
 }

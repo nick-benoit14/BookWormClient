@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute }  from 'react-router';
 import appHistory                     from './history';
 import Index                          from './components/layout/index';
 import NotFound                       from './components/common/not_found';
-import InteractionList                from './interactions/components/interaction_list/_interaction_list';
+import InteractionList                from './interactions/components/_list_interactions';
 
 export default (
   <Router history={appHistory}>
