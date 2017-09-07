@@ -19,3 +19,17 @@ export function showInteraction(interactionId) {
     url: `${apiUrl}/interactions/${interactionId}`,
   };
 }
+
+export function createInteraction(interaction) {
+  return {
+    type: Constants.CREATE_INTERACTION,
+    interaction,
+  };
+}
+
+export function deleteInteraction(id) {
+
+}
+
+export function updateInteraction(interaction) {
+}
